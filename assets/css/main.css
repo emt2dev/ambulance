@@ -1,0 +1,136 @@
+body {
+    padding-top: 56px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#intro {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+    #intro {
+        margin-top: -58.59px;
+    }
+}
+
+nav {
+    background-color: #46261d;
+    background: linear-gradient(
+        45deg,
+        red,
+        white,
+        blue
+    );
+}
+
+.navbar .nav-link {
+    color: #000;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  #lottieContainer {
+    display: none;
+  }
+
+  #intro__text {
+    color: #fff;
+    }
+  
+  @media (max-width: 768px) {
+    /* Hide the video and display the image on screens with a maximum width of 768px (adjust as needed) */
+    #myVideo {
+      display: none;
+    }
+    
+    #lottieContainer {
+        display: block;
+        position: absolute;
+        left: 4rem;
+        top: 3rem;
+    }
+
+    #intro__text {
+        padding-top: 10rem;
+        color: black;
+    }
+  }
+
+  .card__textContainer {
+    margin: 0 10rem;
+  }
+
+    .carousel-image {
+    width: 80%; /* Set a width of 100% to fill the parent container */
+    max-height: 80%; /* Set the desired height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    }
+
+.page-link {
+    color: #fff !important;
+}
+
+.removeLink {
+    text-decoration: none;
+}
+
+.card .img-fluid {
+    height: 22rem;
+    object-fit: cover;
+}
+
+.social-icons {
+    margin: -2rem 0 2rem;
+    height: 5rem; 
+    width: 100%; 
+    background-color: #f2f2f2; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.social-icons .navbar-nav {
+    list-style: none; 
+}
+
+.social-icons .nav-item {
+    margin: 0;
+}
+
+.social-icons .nav-link {
+    font-size: 1.5rem; 
+    color: #333; 
+    margin: 1rem;
+}
+
+.social-icons .nav-link:hover {
+    color: #007bff;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    bottom: 0;
+}
+
+#reservations {
+    padding-top: 5rem;
+    background-image: url("../media/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 125vh;
+}
