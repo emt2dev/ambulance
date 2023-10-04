@@ -68,10 +68,6 @@ nav {
     }
   }
 
-  .card__textContainer {
-    margin: 0 10rem;
-  }
-
     .carousel-image {
     width: 80%; /* Set a width of 100% to fill the parent container */
     max-height: 80%; /* Set the desired height for all images */
