@@ -26,6 +26,19 @@ nav {
     );
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent; /* Fully transparent background */
+    z-index: 5000; /* Ensure it's on top of other content */
+    opacity: 0; /* Make the overlay invisible */
+    pointer-events: none; /* Disable pointer events on the overlay */
+}
+
 .navbar .nav-link {
     color: #000;
 }
@@ -50,6 +63,7 @@ nav {
     }
   
   @media (max-width: 768px) {
+    
     /* Hide the video and display the image on screens with a maximum width of 768px (adjust as needed) */
     #myVideo {
       display: none;

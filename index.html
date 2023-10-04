@@ -7,8 +7,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>MX Restaurant</title>
-        <meta name="description" content="">
+        <title>Generic Ambulance Company</title>
+        <meta name="description" content="this is a sample description">
+        <link rel="icon" href="assets/media/images/ambulance.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
@@ -20,13 +21,13 @@
             <nav class="navbar navbar-expand-lg navbar fixed-top" style="z-index: 2000;">
                 <div class="container-fluid">
                   <a class="navbar-brand nav-link" href="#intro">
-                    <strong class="text-white">Company Name</strong>
+                    <strong class="text-{{isMobile ? 'black' : 'white'}}">Company Name</strong>
                   </a>
-                  <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navBar"
+                    aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarExample01">
+                  <div class="collapse navbar-collapse" id="navBar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item active">
                         <a class="nav-link text-center" aria-current="page" href="#intro">Home</a>
@@ -64,7 +65,7 @@
                 </div>
               </nav>
 
-              <div id="intro" class="bg-image shadow-2-strong">
+              <div id="intro" class="bg-image shadow-2-strong  mb-0">
                 <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
                   <div class="container d-flex align-items-center justify-content-center text-center h-100">
                     <video autoplay muted loop id="myVideo">
@@ -89,8 +90,7 @@
                 </div>
               </div>
         </header>
-
-        <main class="my-5">
+        <main class="mt-3">
             <div class="container">
               <section class="text-center" id="story">
                 <h4 class="mb-5"><strong>Our Story</strong></h4>        
@@ -217,7 +217,7 @@
                 <h1 class="mb-3">Careers</h1>
                 <h4 class="mb-3">Looking for a stable and adventurous career?</h4>
                 <div class="row pt-5">
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 pt-3">
                     <h5>Competitive Salaries</h5>
                     <ul class="list-group">
                       <li class="list-group-item">EMT: $16.00 an hour</li>
@@ -225,7 +225,7 @@
                       <li class="list-group-item">Paramedic: $25.00 an hour</li>
                     </ul>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 pt-3">
                     <h5>Professional Development</h5>
                     <p>
                       Employer-paid continuing education credits are a valuable perk that demonstrates a company's commitment to the professional growth of its employees. By covering the costs associated with ongoing training and skill development, employers not only enhance the expertise of their workforce but also stay at the forefront of industry trends. This investment in education not only benefits individual employees but also contributes to the overall success and competitiveness of the organization.
@@ -393,9 +393,12 @@
 
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-              © 2021 Copyright:
+              © 2023 Copyright:
               <a class="text-reset fw-bold" href="https://emt2dev.github.io/">durondavid.com</a>
+              <br/>
               <a class="text-reset fw-bold" href="#">Made By David Duron</a>
+              <br/>
+              <a href="https://www.flaticon.com/free-icons/ambulance" title="ambulance icons">Ambulance icons created by Flat Icons - Flaticon</a>
             </div>
             <!-- Copyright -->
           </footer>
